@@ -1,0 +1,15 @@
+<launch>
+  <!-- 
+       Using simulation time means nodes initialized after this
+       will not use the system clock for its ROS clock and 
+       instead wait for simulation ticks. 
+
+       See http://wiki.ros.org/Clock
+
+       Note: set to false for deploying to a real robot.
+  -->
+
+  <!-- Rotate the robot on launch -->
+  <node pkg="hello_world_robot" type="start" name="start" output="screen"/>
+  
+</launch>
